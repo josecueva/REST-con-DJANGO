@@ -1,0 +1,99 @@
+sudo apt-get install python-setuptools
+sudo apt-get install python-dev
+
+
+//instalar librerias python
+sudo easy_install pip
+sudo pip install virtualenv
+
+//SIN SER ROOT de aqui al final
+//crear entorno virtual 
+virtualenv /home/salas/entornosvirtuales1/desarrollo1
+
+
+
+//Activar entorno virtual
+source /home/salas/entornosvirtuales1/desarrollo1/bin/activate
+
+
+//bajar
+https://www.dropbox.com/s/s7urbcunto8nsdp/requirements.txt?dl=0
+
+//Ejecutar (con el entorno activado)
+pip install -r requirements.txt
+------------------------------------------
+------------------------------------------
+//Creacion del proyecto Django
+//En Home
+mkdir proyectos-ac
+cd proyectos-ac
+django-admin startproject institucion
+
+/dentro de institucion->
+python manage.py startapp escuela
+
+//CONFIGURAR ARCHIVOS
+https://gist.github.com/reroes/a00e9bfc88b45af17f0e8788322638d3
+
+//CREAR MODELOS
+python manage.py makemigrations escuela
+python manage.py migrate
+
+//jose jose
+python manage.py createsuperuser
+
+python manage.py runserver
+
+http://127.0.0.1:8000/admin/
+//Modificar models.py para dar formato
+
+
+//Crear serializers en escuela
+
+
+//Modificar urls.py en proyecto y en aplicacion
+
+-----------------------
+APACHE
+-----------------------
+//Instalar Apache
+apt-get install apache2
+service apache2 status
+
+
+//crear carpeta public_html (ahi poner archivos html) en directorio base
+sudo a2enmod userdir
+
+y abrir http://localhost/~salas/
+
+//Se comunica con REST
+testService.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
